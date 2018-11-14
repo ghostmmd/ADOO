@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<title>ODEventos</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+	
+
+</head>
+<body>
+<div class="signup-form">
+    <form action="../index/index.html" method="post">
+		<h2>Registro</h2>
+		<p class="hint-text">Crear tu cuenta. Esto es gratis y solo te toma unos minutos.</p>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="Nombre(s)" required="required"></div>
+				<div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Apellidos" required="required"></div>
+			</div>        	
+        </div>
+        <div class="form-group">
+        	<input type="text" class="form-control" name="user" placeholder="Nombre de usuario" required="required">
+        </div>
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" placeholder="E-mail" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
+            <br>
+            <p> Tipo de usuario</p>
+            <div>
+    <input type="radio" id="general"
+     name="tipo" value="general">
+    <label for="contactChoice1"> General   </label>
+
+    <input type="radio" id="moderador"
+     name="tipo" value="moderador">
+    <label for="contactChoice2"> Moderador   </label>
+
+    <input type="radio" id="administrador"
+     name="tipo" value="administrador">
+    <label for="contactChoice3"> Administrador   </label>
+  </div>
+        </div>        
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> Acepto los <a href="#">Terminos de uso</a> &amp; <a href="../documentos/politicas.pdf">Políticas de seguridad</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Registrar ahora</button>
+        </div>
+    </form>
+	<div class="text-center">¿Ya tienes una cuenta? <a href="../index/index.html">Iniciar Sesion</a></div>
+</div>
+</body>
+</html>                            
